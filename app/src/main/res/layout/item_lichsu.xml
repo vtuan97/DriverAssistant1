@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:mode="same_level"
-    app:dragEdge="right">
+    app:dragEdge="right"
+    android:layout_margin="5dp">
 
     <!-- Your secondary layout here -->
 
@@ -17,7 +18,7 @@
 
         <TextView
             android:layout_width="70dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="Delete"
             android:background="@color/com_facebook_button_border_color_focused" />
 

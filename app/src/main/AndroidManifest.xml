@@ -14,6 +14,15 @@
         <activity
             android:name=".ActivityPacket.DoXangActivity"
             android:exported="true" />
+        <activity
+            android:name=".ActivityPacket.SosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityPacket.DichVuActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.driverassistant.ui.notifications.AccountSetting"
+            android:exported="true" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

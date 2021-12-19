@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.driverassistant.R;
 import com.example.driverassistant.databinding.FragmentNotificationsBinding;
 
-public class NotificationsFragment extends Fragment {
+public class AccountFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
     private FragmentNotificationsBinding binding;
@@ -33,7 +33,7 @@ public class NotificationsFragment extends Fragment {
     }
 
     private void caiDat() {
-        Intent i = new Intent(getActivity(), NotificationsSetting.class);
+        Intent i = new Intent(getActivity(), AccountSetting.class);
         startActivity(i);
     }
 
