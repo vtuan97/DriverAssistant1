@@ -32,6 +32,8 @@
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_dichvu.xml" value="0.16510416666666666" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_do_xang.xml" value="0.264" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_doxang.xml" value="0.16510416666666666" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_settingaccount.xml" value="0.264" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_sos.xml" value="0.16510416666666666" />
@@ -39,7 +41,7 @@
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_dashboard.xml" value="0.16510416666666666" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_home.xml" value="0.16510416666666666" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_lichsu.xml" value="0.23854166666666668" />
-        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_notifications.xml" value="0.536" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/item_callsos.xml" value="0.25416666666666665" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/item_lichsu.xml" value="0.25416666666666665" />
         <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/item_user.xml" value="0.25416666666666665" />

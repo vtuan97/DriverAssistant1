@@ -60,6 +60,11 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this, "Vui long nhap pass", Toast.LENGTH_LONG).show();
             return;
         }
+        if (TextUtils.isEmpty(Confirmpass)) {
+            Toast.makeText(this, "Vui long nhap pass", Toast.LENGTH_LONG).show();
+            return;
+        }
+        // viet Ham Kiemtra tai day
 
         fAuth.createUserWithEmailAndPassword(Email, Pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -68,6 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Đăng kí thành công", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                     startActivity(intent);
+                    finishAffinity();
                 } else {
                     Toast.makeText(getApplicationContext(), "Đăng kí không thành công", Toast.LENGTH_LONG).show();
                 }

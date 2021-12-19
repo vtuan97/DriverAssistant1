@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ import java.util.Calendar;
 public class DoXangActivity extends AppCompatActivity {
     TextView tv_ChonNgay;
     EditText et_ChonNgay;
+    Button btn_ExitDoxang;
     DatePickerDialog.OnDateSetListener setListener;
 
     @Override
@@ -28,6 +30,14 @@ public class DoXangActivity extends AppCompatActivity {
 
         tv_ChonNgay = findViewById(R.id.tv_NgayDoXang);
         et_ChonNgay = findViewById(R.id.ed_ChonNgayDoXang);
+
+        btn_ExitDoxang = findViewById(R.id.btn_exitDoxang);
+
+        btn_ExitDoxang.setOnClickListener(v -> {
+            //Toast.makeText(getApplicationContext(), "Exit", Toast.LENGTH_LONG).show();
+            this.finish();
+        });
+
 
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);

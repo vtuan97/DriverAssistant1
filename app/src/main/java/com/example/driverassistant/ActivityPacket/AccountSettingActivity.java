@@ -7,25 +7,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.driverassistant.R;
 
-public class SosActivity extends AppCompatActivity {
-    Button btn_ExitSos;
+public class AccountSettingActivity extends AppCompatActivity {
+
+    Button btn_Settingaccount;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sos);
+        setContentView(R.layout.activity_settingaccount);
 
-        btn_ExitSos = findViewById(R.id.btn_exitsos);
-
-        btn_ExitSos.setOnClickListener(v -> {
+        btn_Settingaccount = findViewById(R.id.btnXacnhansetting);
+        btn_Settingaccount.setOnClickListener(v -> {
             //Toast.makeText(getApplicationContext(), "exit", Toast.LENGTH_LONG).show();
             this.finish();
         });
-
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-    }
+    
 }

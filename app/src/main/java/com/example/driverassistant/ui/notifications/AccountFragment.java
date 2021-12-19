@@ -11,29 +11,32 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.driverassistant.ActivityPacket.AccountSettingActivity;
 import com.example.driverassistant.R;
-import com.example.driverassistant.databinding.FragmentNotificationsBinding;
+import com.example.driverassistant.databinding.FragmentAccountBinding;
 
 public class AccountFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
-    private FragmentNotificationsBinding binding;
+    private FragmentAccountBinding binding;
+
+    Button btn_Setting;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
                 new ViewModelProvider(this).get(NotificationsViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentAccountBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        Button btnSetting = root.findViewById(R.id.btnSetting);
-        btnSetting.setOnClickListener(v -> caiDat());
+        btn_Setting = root.findViewById(R.id.btnSetting);
+        btn_Setting.setOnClickListener(v -> caiDat());
         return root;
     }
 
     private void caiDat() {
-        Intent i = new Intent(getActivity(), AccountSetting.class);
+        Intent i = new Intent(getActivity(), AccountSettingActivity.class);
         startActivity(i);
     }
 

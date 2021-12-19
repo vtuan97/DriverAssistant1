@@ -21,7 +21,7 @@
             android:name=".ActivityPacket.DichVuActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.driverassistant.ui.notifications.AccountSetting"
+            android:name="com.example.driverassistant.ActivityPacket.AccountSettingActivity"
             android:exported="true" />
 
         <meta-data
