@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672980583588",
+    "project_id": "driverassistant-593e2",
+    "storage_bucket": "driverassistant-593e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672980583588:android:153ce1aab9c4503a1b1231",
+        "android_client_info": {
+          "package_name": "com.example.driverassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672980583588-i9sl8ufj45kj8v5sp4vc2huosr45tobn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4D6rQTcLgrwzJfFDMA3TO-3vA9443Uns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672980583588-i9sl8ufj45kj8v5sp4vc2huosr45tobn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

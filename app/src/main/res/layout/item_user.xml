@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRevealLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <!-- Your secondary layout here -->
+
+    <LinearLayout
+        android:id="@+id/layout_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:background="@color/com_facebook_button_border_color_focused" />
+
+    </LinearLayout>
+    <!-- Your main layout here -->
+    <LinearLayout
+        android:id="@+id/layout_history"
+        android:layout_width="match_parent"
+        android:padding="7dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPicHistory"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số km"
+                android:textColor="#F44336"
+                android:layout_marginBottom="7dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSokm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sô ngày"
+                android:textColor="#F44336"
+                android:layout_marginBottom="7dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSongay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="000000" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvXinChao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Xin chào,"
+                android:textColor="#F44336"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_doxang" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_design_services_24" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_call" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Đổ xăng"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Dịch vụ"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SOS"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.9">
+
+    </LinearLayout>
+</LinearLayout>
