@@ -29,6 +29,14 @@
         <entry key="..\:/DriverAssistant/app/src/main/res/menu/edit_remove_menu.xml" value="0.13020833333333334" />
         <entry key="..\:/DriverAssistant/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
         <entry key="..\:/DriverAssistant/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_dichvu.xml" value="0.16510416666666666" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_do_xang.xml" value="0.264" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_doxang.xml" value="0.16510416666666666" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_settingaccount.xml" value="0.1" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/activity_sos.xml" value="0.16510416666666666" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_dashboard.xml" value="0.16510416666666666" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_home.xml" value="0.16510416666666666" />
+        <entry key="..\:/DriverAssistant1/DriverAssistant1/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -1,14 +1,17 @@
 package com.example.driverassistant.ui.notifications;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.driverassistant.R;
 import com.example.driverassistant.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
@@ -24,8 +27,14 @@ public class NotificationsFragment extends Fragment {
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-       
+        Button btnSetting = root.findViewById(R.id.btnSetting);
+        btnSetting.setOnClickListener(v -> caiDat());
         return root;
+    }
+
+    private void caiDat() {
+        Intent i = new Intent(getActivity(), NotificationsSetting.class);
+        startActivity(i);
     }
 
     @Override

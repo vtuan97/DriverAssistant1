@@ -56,18 +56,21 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/do_xang_btn"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:src="@drawable/ic_doxang" />
 
         <ImageButton
+            android:id="@+id/dich_vu_btn"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:src="@drawable/ic_baseline_design_services_24" />
 
         <ImageButton
+            android:id="@+id/sos_btn"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
