@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
-    private EditText pass,email;
+    private EditText pass, email, confirmpass;
     private Button btnRegister;
     private FirebaseAuth fAuth;
 
@@ -39,32 +39,37 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
-    private void init(){
+
+    private void init() {
         email = findViewById(R.id.email1);
         pass = findViewById(R.id.password1);
+        confirmpass = findViewById(R.id.password2);
         btnRegister = findViewById(R.id.btnRegister1);
     }
 
     private void register() {
-        String Email,Pass;
+        String Email, Pass, Confirmpass;
         Email = email.getText().toString();
         Pass = pass.getText().toString();
-        if(TextUtils.isEmpty(Email)){
-            Toast.makeText(this,"Vui long nhap email",Toast.LENGTH_LONG).show();
-            return;
-        }if(TextUtils.isEmpty(Pass)){
-            Toast.makeText(this,"Vui long nhap pass",Toast.LENGTH_LONG).show();
+        Confirmpass = confirmpass.getText().toString();
+        if (TextUtils.isEmpty(Email)) {
+            Toast.makeText(this, "Vui long nhap email", Toast.LENGTH_LONG).show();
             return;
         }
-        fAuth.createUserWithEmailAndPassword(Email,Pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        if (TextUtils.isEmpty(Pass)) {
+            Toast.makeText(this, "Vui long nhap pass", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        fAuth.createUserWithEmailAndPassword(Email, Pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(getApplicationContext(),"Đăng kí thành công",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent (RegisterActivity.this,MainActivity.class);
+                if (task.isSuccessful()) {
+                    Toast.makeText(getApplicationContext(), "Đăng kí thành công", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(getApplicationContext(),"Đăng kí không thành công",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Đăng kí không thành công", Toast.LENGTH_LONG).show();
                 }
             }
         });
