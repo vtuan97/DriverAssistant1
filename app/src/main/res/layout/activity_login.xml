@@ -1,79 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="35dp"
-    android:layout_gravity="center">
+    android:background="@drawable/login1">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Đăng nhập"
-        android:textColor="#2196F3"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textSize="15dp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Vui lòng nhập email"
-        android:id="@+id/email" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="15dp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="******"
-        android:password="true"
-        android:id="@+id/password" />
+        android:layout_height="0dp"
+        android:layout_weight="1.2" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:orientation="vertical"
+        android:layout_margin="35dp"
+        android:layout_gravity="center"
+        android:background="#131C4C">
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="#2196F3"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_margin="20dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+            android:id="@+id/email"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/input_shape"
             android:layout_margin="20dp"
-            android:text="Đăng nhập" />
+            android:padding="8dp" />
 
-        <Button
-            android:id="@+id/btnRegister"
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:password="true"
+            android:id="@+id/password"
+            android:layout_margin="20dp"
+            android:background="@drawable/input_shape"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Đăng nhập"
+                android:background="#D5C32D" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:background="#D5C32D" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_____"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnLoginFB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đăng ký" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
     </LinearLayout>
 
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="or"
-        android:gravity="center" />
-
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/btnLoginFB"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
+
+    </LinearLayout>
 
 </LinearLayout>

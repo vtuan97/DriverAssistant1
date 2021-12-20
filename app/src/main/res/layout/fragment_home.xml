@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
     android:orientation="vertical"
-    android:padding="30dp">
+    android:padding="30dp"
+    android:background="@drawable/img">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +41,8 @@
                 android:id="@+id/tvPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name" />
+                android:hint="Name"
+                android:textSize="25dp" />
 
         </LinearLayout>
 
@@ -83,7 +85,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="40dp"
-        android:layout_weight="0.2"
+        android:layout_weight="0.3"
         android:orientation="horizontal">
 
         <TextView
@@ -92,14 +94,16 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Đổ xăng"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="17dp" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="Dịch vụ"
+            android:textSize="17dp"
             android:textStyle="bold" />
 
         <TextView
@@ -108,13 +112,14 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="SOS"
+            android:textSize="17dp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.9">
+        android:layout_weight="3.7">
 
     </LinearLayout>
 </LinearLayout>
