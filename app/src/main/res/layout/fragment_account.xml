@@ -118,7 +118,7 @@
 
 
         <Button
-            android:id="@+id/btnSetting"
+            android:id="@+id/btn_SettingAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -127,13 +127,13 @@
             android:text="Chỉnh sửa trang cá nhân" />
 
         <Button
-            android:id="@+id/btnSignout"
+            android:id="@+id/btn_Dangxuat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:background="#000000"
-            android:text="Sign out" />
+            android:text="Đăng xuất" />
     </LinearLayout>
 
     <LinearLayout
