@@ -11,10 +11,16 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.driverassistant.R;
 import com.example.driverassistant.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.StorageReference;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance("https://driverassistant-593e2-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    DatabaseReference accountRef, customerRef, activityRef, activityHisRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         BottomNavigationView navView = findViewById(R.id.nav_view);
         init();
+        setdata();
+
     }
 
 
@@ -36,6 +44,20 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+    }
+
+    void setdata(){
+        accountRef = database.getReference("Account");
+        accountRef.setValue("test");
+
+        customerRef = database.getReference("Customer");
+        customerRef.setValue("test");
+
+        activityRef = database.getReference("Activity");
+        activityRef.setValue("test");
+
+        activityHisRef = database.getReference("ActivityHistory");
+        activityHisRef.setValue("test");
     }
 }
 
