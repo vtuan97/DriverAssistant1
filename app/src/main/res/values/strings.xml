@@ -2,7 +2,7 @@
     <string name="app_name">DriverAssistant</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Lịch sử</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications">Account</string>
     <string name="facebook_app_id">234662272133332</string>
     <string name="fb_login_protocol_scheme">fb234662272133332</string>
     <!-- Strings related to login -->
