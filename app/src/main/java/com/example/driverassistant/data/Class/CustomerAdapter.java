@@ -1,4 +1,4 @@
-package com.example.driverassistant.ActivityPacket;
+package com.example.driverassistant.data.Class;
 
 import android.view.View;
 import android.widget.LinearLayout;

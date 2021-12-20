@@ -1,4 +1,4 @@
-package com.example.driverassistant.ActivityPacket;
+package com.example.driverassistant.data.Class;
 
 public class Customer {
     private String id;
