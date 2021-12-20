@@ -48,16 +48,16 @@ public class MainActivity extends AppCompatActivity {
 
     void setdata(){
         accountRef = database.getReference("Account");
-        accountRef.setValue("test");
+        //accountRef.setValue("test");
 
         customerRef = database.getReference("Customer");
-        customerRef.setValue("test");
+        //customerRef.setValue("test");
 
         activityRef = database.getReference("Activity");
-        activityRef.setValue("test");
+        //activityRef.setValue("test");
 
         activityHisRef = database.getReference("ActivityHistory");
-        activityHisRef.setValue("test");
+        //activityHisRef.setValue("test");
     }
 }
 
